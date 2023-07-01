@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/*ESTILIZAÇÃO MOBILE */
+
+@media screen and (max-width: 500px) {
+    #navMobile {
+        display: block;
+    }
+
+    .navDesktop {
+        display: none;
+    }
+
+    .img-desktop-header {
+        display: none;
+    }
+
+
+    .header-desktop {
+        display: none;
+    }
+}
+
+@media screen and(min-width: 764px) {
+
+}
+
+@media screen and (max-width: 999px) {
+    .navDesktop {
+        display: none;
+    }
+
+    .header-desktop {
+        display: none;
+    }
+
+    .headerMobile {
+        background-image: url(img/headerDesktop.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+}
+/* ESTILIZAÇÃO PC */
+@media screen and (min-width: 1000px) {
+    #navMobile {
+        display: none;
+    }
+
+    .navDesktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navDesktop h1 {
+        font-weight: bold;
+        padding-left: 10px;
+        color: white;
+    }
+
+    .navDesktop ul  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        gap: 3em;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-right: 10px;
+        font-weight: bold;;
+    }
+
+    .navDesktop ul li {
+        color: white;
+
+    }
+
+    .home-link, .contact-link, .especializacao-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .img-desktop-header {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .header-desktop {
+        background-image: url(img/headerDesktop.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .element-header {
+        height: 400px;
+        width: 100%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .element-header h2 {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        width: 560px;
+        text-transform: uppercase;
+    }
+
+    .btnContact {
+        border: none;
+        height: 70px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+
+    .btnContact:hover {
+        background-color: white;
+        color: black;
+        transition-duration: 1.0s;
+    }
+
+
+}
